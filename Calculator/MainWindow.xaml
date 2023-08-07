@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Calculator" Height="450" Width="350">
+    
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <!-- These are for the outputs -->
+            <RowDefinition Height="100"/>
+            <!-- These are for numbers-->
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="82.5" />
+            <ColumnDefinition Width="82.5" />
+            <ColumnDefinition Width="82.5" />
+            <ColumnDefinition Width="82.5" />
+        </Grid.ColumnDefinitions>
     </Grid>
 </Window>
