@@ -25,5 +25,86 @@
             <ColumnDefinition Width="82.5" />
             <ColumnDefinition Width="82.5" />
         </Grid.ColumnDefinitions>
+
+        <Button x:Name="SevenBtn" 
+                Content="7" Grid.Row="1"
+                Grid.Column="0"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="EightBtn" 
+                Content="8" Grid.Row="1"
+                Grid.Column="1"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="NineBtn" 
+                Content="9" Grid.Row="1"
+                Grid.Column="2"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="FourBtn" 
+                Content="4" Grid.Row="2"
+                Grid.Column="0"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="FiveBtn" 
+                Content="5" Grid.Row="2"
+                Grid.Column="1"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="SixBtn" 
+                Content="6" Grid.Row="2"
+                Grid.Column="2"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="OneBtn" 
+                Content="6" Grid.Row="3"
+                Grid.Column="0"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="TwoBtn" 
+                Content="2" Grid.Row="3"
+                Grid.Column="1"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="ThreeBtn" 
+                Content="3" Grid.Row="3"
+                Grid.Column="2"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="ZeroBtn" 
+                Content="0" Grid.Row="4"
+                Grid.Column="1"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
     </Grid>
 </Window>
