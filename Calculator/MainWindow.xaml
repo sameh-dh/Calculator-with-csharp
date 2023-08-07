@@ -20,11 +20,21 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="82.5" />
-            <ColumnDefinition Width="82.5" />
-            <ColumnDefinition Width="82.5" />
-            <ColumnDefinition Width="82.5" />
+            <ColumnDefinition Width="78" />
+            <ColumnDefinition Width="78" />
+            <ColumnDefinition Width="78" />
+            <ColumnDefinition Width="78" />
         </Grid.ColumnDefinitions>
+
+        <TextBlock
+            x:Name="OutputTextBlock"
+            Margin="5"
+            Grid.Row="0"
+            Grid.Column="0" 
+            Grid.ColumnSpan="4"
+            Text="0"
+            FontSize="45"
+            TextAlignment="Right"/>
 
         <Button x:Name="SevenBtn" 
                 Content="7" Grid.Row="1"
