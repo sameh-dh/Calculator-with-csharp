@@ -89,12 +89,16 @@ namespace Calculator
         {
             string name = ((Button)sender).Name;
             //if there is no operation already
-            if (operation == "")
+            if (operation == "" && output != "")
             {
                 temp = double.Parse(output);
                 output = "";
                 operation = name;
                
+            }
+            else if (operation == "" && output == "")
+            {
+                OutputTextBlock.Text = "0";
             }
             else
             {
@@ -128,11 +132,57 @@ namespace Calculator
                         OutputTextBlock.Text = result;
                         operation = name;
                         break;
+                    
 
-                
+
 
                 }
             }
+        }
+
+        private void EqualBtn_Click(object sender, RoutedEventArgs e)
+        {
+             
+         switch (operation)
+            {
+                case "DivBtn":
+                    temp = temp / double.Parse(output);
+                    result = $"{temp}";
+                    output = "";
+                    OutputTextBlock.Text = result;
+                    operation = "";
+                    result = "";
+                    temp = 0;
+                    break;
+                case "MultiBtn":
+                    temp = temp * double.Parse(output);
+                    result = $"{temp}";
+                    output = "";
+                    OutputTextBlock.Text = result;
+                    operation = "";
+                    result = "";
+                    temp = 0;
+                    break;
+                case "MinsBtn":
+                    temp -= double.Parse(output);
+                    result = $"{temp}";
+                    output = "";
+                    OutputTextBlock.Text = result;
+                    operation = "";
+                    result = "";
+                    temp = 0;
+                    break;
+                case "PlusBtn":
+                    temp += double.Parse(output);
+                    result = $"{temp}";
+                    output = "";
+                    OutputTextBlock.Text = result;
+                    operation = "";
+                    result = "";
+                    temp = 0;
+                    break;
+            }
+            
         }
     }
 }

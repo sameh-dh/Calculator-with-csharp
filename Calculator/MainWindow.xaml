@@ -158,7 +158,7 @@
                 FontSize="25"
                 FontWeight="Bold"
                 Cursor="Hand"
-                Click="MathBtn_Click"
+                Click="EqualBtn_Click"
                 />
 
         <Button x:Name="DeleteBtn" 
