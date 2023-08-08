@@ -21,8 +21,10 @@ namespace Calculator
     public partial class MainWindow : Window
     {
         double temp = 0;
-
+       
        string output = "";
+        string operation = "";
+        string result = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -83,12 +85,45 @@ namespace Calculator
             }
         }
 
-        private void MinsBtn_Click(object sender, RoutedEventArgs e)
+       
+
+        private void MathBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (output != "")
+            string name = ((Button)sender).Name;
+            //if there is no operation already
+            if (operation == "")
             {
-               temp -=  double.Parse(output);
+                temp = double.Parse(output);
                 output = "";
+               
+                operation = name;
+               
+            }
+            else
+            {
+                switch (operation)
+                {
+                    case "DivBtn":
+                     
+                        break;
+                    case "MultiBtn":
+
+                        break;
+                    case "MinsBtn":
+                        temp -= double.Parse(output);
+                        result = $"{temp}";
+                        output = "";
+                        OutputTextBlock.Text = result;
+                 
+                        break;
+                    case "PlusBtn":
+
+                        break;
+                    case "EqualBtn":
+
+                        break;
+
+                }
             }
         }
     }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Calculator" Height="450" Width="350">
+        Title="Every Day Calculator" Height="450" Width="350">
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -33,7 +33,7 @@
             Grid.Column="0" 
             Grid.ColumnSpan="4"
             FontSize="45"
-            Text="{Binding output}"
+            Text="0"
             TextAlignment="Right"/>
 
         <Button x:Name="SevenBtn" 
@@ -122,7 +122,7 @@
                 FontSize="25"
                 FontWeight="Bold"
                 Cursor="Hand"
-                Click="NumBtn_Click"
+                Click="MathBtn_Click"
                 />
         <Button x:Name="MultiBtn" 
                 Content="✖️" Grid.Row="2"
@@ -130,15 +130,7 @@
                 FontSize="25"
                 FontWeight="Bold"
                 Cursor="Hand"
-                Click="NumBtn_Click"
-                />
-        <Button x:Name="PlusBtn" 
-                Content="➕" Grid.Row="4"
-                Grid.Column="3"
-                FontSize="25"
-                FontWeight="Bold"
-                Cursor="Hand"
-                Click="NumBtn_Click"
+                Click="MathBtn_Click"
                 />
         <Button x:Name="MinsBtn" 
                 Content="➖" Grid.Row="3"
@@ -146,17 +138,37 @@
                 FontSize="25"
                 FontWeight="Bold"
                 Cursor="Hand"
-                Click="NumBtn_Click"
+                Click="MathBtn_Click"
+                />
+        <Button x:Name="PlusBtn" 
+                Content="➕" Grid.Row="4"
+                Grid.Column="3"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="MathBtn_Click"
                 />
   
-        <Button x:Name="SemiBtn" 
-                Content="," Grid.Row="4"
+    
+
+
+        <Button x:Name="EqualBtn" 
+                Content="☺️" Grid.Row="4"
+                Grid.Column="2"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="MathBtn_Click"
+                />
+
+        <Button x:Name="DeleteBtn" 
+                Content="🔙" Grid.Row="4"
                 Grid.Column="0"
                 FontSize="25"
                 FontWeight="Bold"
                 Cursor="Hand"
-                Click="NumBtn_Click"
+                Click="MathBtn_Click"
                 />
-     
+
     </Grid>
 </Window>
