@@ -28,8 +28,6 @@ namespace Calculator
         public MainWindow()
         {
             InitializeComponent();
-            //binding
-            this.DataContext = this;
 
 
         }
@@ -95,7 +93,6 @@ namespace Calculator
             {
                 temp = double.Parse(output);
                 output = "";
-               
                 operation = name;
                
             }
@@ -104,24 +101,35 @@ namespace Calculator
                 switch (operation)
                 {
                     case "DivBtn":
-                     
+                        temp = temp / double.Parse(output);
+                        result = $"{temp}";
+                        output = "";
+                        OutputTextBlock.Text = result;
+                        operation = name;
                         break;
                     case "MultiBtn":
-
+                        temp = temp * double.Parse(output);
+                        result = $"{temp}";
+                        output = "";
+                        OutputTextBlock.Text = result;
+                        operation = name;
                         break;
                     case "MinsBtn":
                         temp -= double.Parse(output);
                         result = $"{temp}";
                         output = "";
                         OutputTextBlock.Text = result;
-                 
+                        operation = name;
                         break;
                     case "PlusBtn":
-
+                        temp += double.Parse(output);
+                        result = $"{temp}";
+                        output = "";
+                        OutputTextBlock.Text = result;
+                        operation = name;
                         break;
-                    case "EqualBtn":
 
-                        break;
+                
 
                 }
             }
