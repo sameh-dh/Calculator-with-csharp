@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
         Title="Calculator" Height="450" Width="350">
-    
+
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <!-- These are for the outputs -->
@@ -20,10 +20,10 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="78" />
-            <ColumnDefinition Width="78" />
-            <ColumnDefinition Width="78" />
-            <ColumnDefinition Width="78" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <TextBlock
@@ -32,8 +32,8 @@
             Grid.Row="0"
             Grid.Column="0" 
             Grid.ColumnSpan="4"
-            Text="0"
             FontSize="45"
+            Text="{Binding output}"
             TextAlignment="Right"/>
 
         <Button x:Name="SevenBtn" 
@@ -85,7 +85,7 @@
                 Click="NumBtn_Click"
                 />
         <Button x:Name="OneBtn" 
-                Content="6" Grid.Row="3"
+                Content="1" Grid.Row="3"
                 Grid.Column="0"
                 FontSize="25"
                 FontWeight="Bold"
@@ -116,5 +116,47 @@
                 Cursor="Hand"
                 Click="NumBtn_Click"
                 />
+        <Button x:Name="DivBtn" 
+                Content="➗" Grid.Row="1"
+                Grid.Column="3"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="MultiBtn" 
+                Content="✖️" Grid.Row="2"
+                Grid.Column="3"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="PlusBtn" 
+                Content="➕" Grid.Row="4"
+                Grid.Column="3"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="MinsBtn" 
+                Content="➖" Grid.Row="3"
+                Grid.Column="3"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+  
+        <Button x:Name="SemiBtn" 
+                Content="," Grid.Row="4"
+                Grid.Column="0"
+                FontSize="25"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Click="NumBtn_Click"
+                />
+     
     </Grid>
 </Window>

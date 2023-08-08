@@ -20,11 +20,16 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        double temp = 0;
 
-        string output = "";
+       string output = "";
         public MainWindow()
         {
             InitializeComponent();
+            //binding
+            this.DataContext = this;
+
+
         }
 
         //Events
@@ -74,8 +79,19 @@ namespace Calculator
                     output += "0";
                     OutputTextBlock.Text = output;
                     break;
-               
+
+            }
+        }
+
+        private void MinsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (output != "")
+            {
+               temp -=  double.Parse(output);
+                output = "";
             }
         }
     }
 }
+
+
