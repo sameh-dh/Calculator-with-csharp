@@ -184,6 +184,15 @@ namespace Calculator
             }
             
         }
+
+        private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            OutputTextBlock.Text = "0";
+            output = "";
+            operation = "";
+            result = "";
+            temp = 0;
+        }
     }
 }
 
