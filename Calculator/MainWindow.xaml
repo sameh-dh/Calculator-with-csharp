@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Every Day Calculator" Height="450" Width="350">
+        Title="Every Day Calculator" Height="450" Width="350"
+         Icon="Asset/keys.png"
+        >
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -34,7 +36,8 @@
             Grid.ColumnSpan="4"
             FontSize="45"
             Text="0"
-            TextAlignment="Right"/>
+            TextAlignment="Right"
+            />
 
         <Button x:Name="SevenBtn" 
                 Content="7" Grid.Row="1"
@@ -43,7 +46,18 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                BorderBrush="White"
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
         <Button x:Name="EightBtn" 
                 Content="8" Grid.Row="1"
                 Grid.Column="1"
@@ -51,7 +65,17 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                >
+               <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
         <Button x:Name="NineBtn" 
                 Content="9" Grid.Row="1"
                 Grid.Column="2"
@@ -59,7 +83,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Button x:Name="FourBtn" 
                 Content="4" Grid.Row="2"
                 Grid.Column="0"
@@ -67,7 +100,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Button x:Name="FiveBtn" 
                 Content="5" Grid.Row="2"
                 Grid.Column="1"
@@ -75,7 +117,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Button x:Name="SixBtn" 
                 Content="6" Grid.Row="2"
                 Grid.Column="2"
@@ -83,7 +134,17 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
         <Button x:Name="OneBtn" 
                 Content="1" Grid.Row="3"
                 Grid.Column="0"
@@ -91,7 +152,17 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
         <Button x:Name="TwoBtn" 
                 Content="2" Grid.Row="3"
                 Grid.Column="1"
@@ -99,7 +170,17 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
         <Button x:Name="ThreeBtn" 
                 Content="3" Grid.Row="3"
                 Grid.Column="2"
@@ -107,7 +188,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Button x:Name="ZeroBtn" 
                 Content="0" Grid.Row="4"
                 Grid.Column="1"
@@ -115,7 +205,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Button x:Name="DivBtn" 
                 Content="➗" Grid.Row="1"
                 Grid.Column="3"
@@ -123,7 +222,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="MathBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Button x:Name="MultiBtn" 
                 Content="✖️" Grid.Row="2"
                 Grid.Column="3"
@@ -131,7 +239,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="MathBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Button x:Name="MinsBtn" 
                 Content="➖" Grid.Row="3"
                 Grid.Column="3"
@@ -139,7 +256,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="MathBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Button x:Name="PlusBtn" 
                 Content="➕" Grid.Row="4"
                 Grid.Column="3"
@@ -147,10 +273,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="MathBtn_Click"
-                />
-  
-    
-
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
         <Button x:Name="EqualBtn" 
                 Content="☺️" Grid.Row="4"
@@ -159,7 +291,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="EqualBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
         <Button x:Name="DeleteBtn" 
                 Content="🔙" Grid.Row="4"
@@ -168,7 +309,16 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="DeleteBtn_Click"
-                />
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="#F3F5F7"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
     </Grid>
 </Window>
