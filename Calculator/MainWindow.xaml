@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Every Day Calculator" Height="450" Width="350"
          Icon="Asset/keys.png"
-        Background="#E1E1E1"
+        Background="#F9F9F9"
    
         >
 
@@ -53,7 +53,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid >
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter 
                             HorizontalAlignment="Center" 
                             VerticalAlignment="Center"/>
@@ -75,7 +75,7 @@
                <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -94,7 +94,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -112,7 +112,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -130,7 +130,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -148,7 +148,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -167,7 +167,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -186,7 +186,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -205,7 +205,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -223,7 +223,7 @@
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E1E1E1"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>

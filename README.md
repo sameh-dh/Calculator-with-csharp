@@ -1,4 +1,4 @@
-# Calculator-with-c#
+# Calculator-with-c
 
 Let's Build a simple calculator using c# and wpf ✅
 
@@ -6,3 +6,7 @@ Let's Build a simple calculator using c# and wpf ✅
 Create new Project
 Wpf App (.Net Framework)
 ```
+
+# Demo :
+
+<img width="auto" height="auto" alt="your alt text" src="Asset/Calculatorcsharp.gif" />
