@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="Every Day Calculator" Height="450" Width="350"
          Icon="Asset/keys.png"
+        Background="#E1E1E1"
+   
         >
 
     <Grid Margin="10">
@@ -45,15 +47,18 @@
                 FontSize="25"
                 FontWeight="Bold"
                 Cursor="Hand"
-                Click="NumBtn_Click"
-                BorderBrush="White"
+                Click="NumBtn_Click" 
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
-                    <Grid>
+                    <Grid >
                         <Ellipse Fill="#F3F5F7"/>
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <ContentPresenter 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
                     </Grid>
+              
                 </ControlTemplate>
             </Button.Template>
         </Button>
@@ -65,6 +70,7 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
+                Margin="5"
                 >
                <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -83,6 +89,7 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -100,6 +107,7 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -117,6 +125,7 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -134,6 +143,7 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -152,6 +162,7 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -170,6 +181,7 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -188,6 +200,7 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -205,6 +218,7 @@
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="NumBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -218,15 +232,16 @@
         <Button x:Name="DivBtn" 
                 Content="➗" Grid.Row="1"
                 Grid.Column="3"
-                FontSize="25"
+                FontSize="18"
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="MathBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E0D4E8"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -235,15 +250,16 @@
         <Button x:Name="MultiBtn" 
                 Content="✖️" Grid.Row="2"
                 Grid.Column="3"
-                FontSize="25"
+                FontSize="18"
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="MathBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E0D4E8"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -252,15 +268,16 @@
         <Button x:Name="MinsBtn" 
                 Content="➖" Grid.Row="3"
                 Grid.Column="3"
-                FontSize="25"
+                FontSize="18"
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="MathBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E0D4E8"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -269,15 +286,16 @@
         <Button x:Name="PlusBtn" 
                 Content="➕" Grid.Row="4"
                 Grid.Column="3"
-                FontSize="25"
+                FontSize="18"
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="MathBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E0D4E8"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -287,15 +305,16 @@
         <Button x:Name="EqualBtn" 
                 Content="☺️" Grid.Row="4"
                 Grid.Column="2"
-                FontSize="25"
+                FontSize="18"
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="EqualBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E0D4E8"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
@@ -305,15 +324,16 @@
         <Button x:Name="DeleteBtn" 
                 Content="🔙" Grid.Row="4"
                 Grid.Column="0"
-                FontSize="25"
+                FontSize="18"
                 FontWeight="Bold"
                 Cursor="Hand"
                 Click="DeleteBtn_Click"
+                Margin="5"
                 >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Ellipse Fill="#F3F5F7"/>
+                        <Ellipse Fill="#E0D4E8"/>
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
